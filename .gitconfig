@@ -76,5 +76,5 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
-#[push]
+[push]
 	#default = simple
