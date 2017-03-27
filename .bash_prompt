@@ -47,7 +47,7 @@ export RESET
 
 # Fastest possible way to check if repo is dirty.
 function parse_git_dirty() {
-	[[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+	[[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "*"
 }
 
 function parse_git_branch() {
