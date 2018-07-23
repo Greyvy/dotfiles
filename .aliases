@@ -14,8 +14,8 @@ alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias vim="nvim"
 alias v="nvim"
+alias vim="nvim"
 # alias v="vim"
 alias m="mate ."
 alias s="subl ."
@@ -150,6 +150,14 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
+# alias to love
+alias love="/Applications/love.app/Contents/MacOS/love"
+
+# alias for emacs so it runs in terminal
+alias emacs="emacs -nw"
+
+# make a video with ffmpeg, filenames must be front padded 3 places `001-.png`
+alias vid="ffmpeg -framerate 30 -i %03d-.png -c:v libx264 -crf 20 -pix_fmt yuv420p output.mp4"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
